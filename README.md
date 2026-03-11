@@ -47,3 +47,8 @@ Output jar path:
 If you create a tag like `v1.0.0` (matches `v*`), the workflow also publishes a GitHub Release with the jar attached.
 
 If you still do not see the action, check **Settings → Actions → General** and ensure Actions are enabled for this repository.
+
+### CI build compatibility note
+
+Fabric Loom `1.6-SNAPSHOT` can fail on newer Gradle versions with `Problems.forNamespace(...)` errors.
+The workflow pins Gradle to `8.8` to avoid this compatibility issue.

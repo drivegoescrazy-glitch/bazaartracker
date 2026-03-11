@@ -26,8 +26,10 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Set up Gradle
+      - name: Set up Gradle 8.8 (Loom compatible)
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.8'
 
       - name: Build release jar
         run: gradle --no-daemon clean releaseJar
@@ -53,8 +55,10 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Set up Gradle
+      - name: Set up Gradle 8.8 (Loom compatible)
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.8'
 
       - name: Build release jar
         run: gradle --no-daemon clean releaseJar
