@@ -15,7 +15,7 @@ Client-side Fabric mod that polls the Hypixel Bazaar API every 30 seconds and re
 
 ## Version note
 
-Fabric is available for Java Edition versions (configured here for **Minecraft 1.21.1**, the closest practical Java Edition Fabric target for your requested `1.21.10`).
+Fabric is available for Java Edition versions (configured here for **Minecraft 1.21.10** to match your target/runtime exactly).
 
 ## Build a single in-game jar
 
@@ -29,12 +29,12 @@ gradle clean releaseJar
 
 Output jar path:
 
-- `release/BazaarTracker-1.1.0-mc1.21.1.jar`
+- `release/BazaarTracker-1.1.1-mc1.21.10.jar`
 
 ## Install in game
 
-1. Install Fabric Loader for Minecraft 1.21.1.
-2. Put `BazaarTracker-1.1.0-mc1.21.1.jar` in `.minecraft/mods/`.
+1. Install Fabric Loader for Minecraft 1.21.10.
+2. Put `BazaarTracker-1.1.1-mc1.21.10.jar` in `.minecraft/mods/`.
 3. Also install the matching Fabric API jar in `.minecraft/mods/`.
 
 ## Download prebuilt jar from GitHub Actions
@@ -44,7 +44,7 @@ Output jar path:
 3. Download the artifact named `BazaarTracker-<commit_sha>`.
 4. Use the jar inside in your `.minecraft/mods/` folder.
 
-If you create a tag like `v1.1.0` (matches `v*`), the workflow also publishes a GitHub Release with the jar attached.
+If you create a tag like `v1.1.1` (matches `v*`), the workflow also publishes a GitHub Release with the jar attached.
 
 If you still do not see the action, check **Settings → Actions → General** and ensure Actions are enabled for this repository.
 
