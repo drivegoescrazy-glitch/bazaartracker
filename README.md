@@ -50,5 +50,5 @@ If you still do not see the action, check **Settings → Actions → General** a
 
 ### CI build compatibility note
 
-Fabric Loom `1.6-SNAPSHOT` can fail on newer Gradle versions with `Problems.forNamespace(...)` errors.
-The workflow pins Gradle to `8.8` to avoid this compatibility issue.
+Minecraft 1.21.10 mappings require a newer Loom than 1.6.x; this project uses `fabric-loom 1.8-SNAPSHOT`.
+The workflow pins Gradle to `8.10.2` to stay compatible with that Loom line.
