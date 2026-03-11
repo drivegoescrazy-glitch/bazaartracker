@@ -44,6 +44,6 @@ Output jar path:
 3. Download the artifact named `BazaarTracker-<commit_sha>`.
 4. Use the jar inside in your `.minecraft/mods/` folder.
 
-If you create a tag like `v1.0.0`, the workflow also publishes a GitHub Release with the jar attached.
+If you create a tag like `v1.0.0` (matches `v*`), the workflow also publishes a GitHub Release with the jar attached.
 
 If you still do not see the action, check **Settings → Actions → General** and ensure Actions are enabled for this repository.
