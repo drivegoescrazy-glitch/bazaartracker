@@ -13,4 +13,4 @@ fi
 
 JAVA_HOME="$USE_JAVA_HOME" PATH="$USE_JAVA_HOME/bin:$PATH" gradle --no-daemon clean releaseJar
 
-echo "Built: release/BazaarTracker-1.0.0-mc1.20.1.jar"
+echo "Built: release/BazaarTracker-1.1.0-mc1.21.1.jar"
