@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.text.Text;
 
 import java.io.IOException;
@@ -127,7 +128,7 @@ public class BazaarTrackerClient implements ClientModInitializer {
         return element.getAsDouble();
     }
 
-    private void renderHud(DrawContext context, float tickDelta) {
+    private void renderHud(DrawContext context, RenderTickCounter tickCounter) {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client == null || client.options == null || client.player == null || client.currentScreen != null && client.currentScreen.shouldPause()) {
             return;
