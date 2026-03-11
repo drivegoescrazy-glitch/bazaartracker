@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "bazaartracker",
+  "version": "${version}",
+  "name": "Bazaar Tracker",
+  "description": "Shows top Hypixel Bazaar flips for a 50M coin budget.",
+  "authors": [
+    "Codex"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.bazaartracker.BazaarTrackerClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
